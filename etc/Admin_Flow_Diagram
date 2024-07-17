@@ -1,0 +1,56 @@
+digraph "Admin Flow Diagram" {
+	node [color=lightyellow shape=rectangle style=filled]
+	edge [arrowhead=open]
+	Start [label=Start color=lightgreen shape=ellipse]
+	"Admin Login" [label="Admin Login"]
+	"Manage Products" [label="Manage Products"]
+	"Add Product" [label="Add Product" color=lightyellow shape=rectangle]
+	"Edit Product" [label="Edit Product" color=lightyellow shape=rectangle]
+	"Delete Product" [label="Delete Product" color=lightyellow shape=rectangle]
+	"Manage Orders" [label="Manage Orders"]
+	"View Orders" [label="View Orders" color=lightyellow shape=rectangle]
+	"Update Order Status" [label="Update Order Status" color=lightyellow shape=rectangle]
+	"Delete Order" [label="Delete Order" color=lightyellow shape=rectangle]
+	"Manage Users" [label="Manage Users"]
+	"View Users" [label="View Users" color=lightyellow shape=rectangle]
+	"Edit User Information" [label="Edit User Information" color=lightyellow shape=rectangle]
+	"Delete User" [label="Delete User" color=lightyellow shape=rectangle]
+	"Manage Categories" [label="Manage Categories"]
+	"Add Category" [label="Add Category" color=lightyellow shape=rectangle]
+	"Edit Category" [label="Edit Category" color=lightyellow shape=rectangle]
+	"Delete Category" [label="Delete Category" color=lightyellow shape=rectangle]
+	"Update System Data" [label="Update System Data" color=lightsalmon shape=diamond]
+	Logout [label=Logout]
+	Stop [label=Stop color=lightcoral shape=ellipse]
+	Start -> "Admin Login"
+	"Admin Login" -> "Manage Products"
+	"Manage Products" -> "Add Product"
+	"Manage Products" -> "Edit Product"
+	"Manage Products" -> "Delete Product"
+	"Admin Login" -> "Manage Orders"
+	"Manage Orders" -> "View Orders"
+	"Manage Orders" -> "Update Order Status"
+	"Manage Orders" -> "Delete Order"
+	"Admin Login" -> "Manage Users"
+	"Manage Users" -> "View Users"
+	"Manage Users" -> "Edit User Information"
+	"Manage Users" -> "Delete User"
+	"Admin Login" -> "Manage Categories"
+	"Manage Categories" -> "Add Category"
+	"Manage Categories" -> "Edit Category"
+	"Manage Categories" -> "Delete Category"
+	"Add Product" -> "Update System Data"
+	"Edit Product" -> "Update System Data"
+	"Delete Product" -> "Update System Data"
+	"View Orders" -> "Update System Data"
+	"Update Order Status" -> "Update System Data"
+	"Delete Order" -> "Update System Data"
+	"View Users" -> "Update System Data"
+	"Edit User Information" -> "Update System Data"
+	"Delete User" -> "Update System Data"
+	"Add Category" -> "Update System Data"
+	"Edit Category" -> "Update System Data"
+	"Delete Category" -> "Update System Data"
+	"Update System Data" -> Logout
+	Logout -> Stop
+}
