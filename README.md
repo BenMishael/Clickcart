@@ -151,7 +151,11 @@ ClickCart follows a client-server architecture:
 Check out our demo video to see ClickCart in action:
 
 
-https://github.com/user-attachments/assets/d1787b95-f56d-4048-b99b-7eaff5f6a24a.mp4
+https://github.com/user-attachments/assets/e860b106-0eec-4b38-b2e3-0fdb86a8857d.mp4
+
+
+
+
 
 
 
